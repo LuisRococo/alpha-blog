@@ -6,3 +6,9 @@
 
 <p><strong>Description: </strong></p>
 <p><%= @article.description %></p>
+
+<p>
+    <%= link_to 'Edit', edit_article_path(@article)%> |
+    <%= link_to 'Delete', article_path(@article), data: { turbo_method: :delete, "turbo-confirm": "Você tem certeza?" }%>
+    <%= link_to 'Return to article listing', articles_path()%>
+</p>
