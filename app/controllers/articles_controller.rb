@@ -34,7 +34,7 @@ class ArticlesController < ApplicationController
             render "edit"
         end
     end
-
+ 
     def edit ()
     end
 
