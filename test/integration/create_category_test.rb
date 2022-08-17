@@ -27,6 +27,5 @@ class CreateCategoryTest < ActionDispatch::IntegrationTest
     assert_match 'errors', response.body
     assert_select 'div.alert'
     assert_select 'h4.alert-heading'
-
   end
 end
